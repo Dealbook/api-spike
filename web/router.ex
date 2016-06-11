@@ -16,7 +16,7 @@ defmodule Api.Router do
   end
 
   pipeline :api do
-    plug CORSPlug, [origin: "http://localhost:4000"]
+    plug CORSPlug, [origin: "*"]
     plug :accepts, ["json"]
   end
 
